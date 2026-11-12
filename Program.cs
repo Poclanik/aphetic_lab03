@@ -1,0 +1,50 @@
+﻿// using System.Text;
+
+// int number = 305419896;
+// Console.WriteLine($"Число: {number}");
+// Console.WriteLine($"В hex: 0x{number:X8}");
+// Console.WriteLine($"Little-endian: {BitConverter.IsLittleEndian}");
+
+// byte[] numberBytes = BitConverter.GetBytes(number);
+// Console.WriteLine("Байты числа:");
+// Console.WriteLine(BitConverter.ToString(numberBytes));
+
+// string text = "Hello";
+// Console.WriteLine();
+// Console.WriteLine($"Текст: {text}");
+
+// byte[] textBytes = Encoding.UTF8.GetBytes(text);
+// Console.WriteLine("Байты текста UTF-8:");
+// Console.WriteLine(BitConverter.ToString(textBytes));
+
+// string text2 = "Привет";
+// byte[] textByte2 = Encoding.UTF8.GetBytes(text2);
+// Console.WriteLine();
+// Console.WriteLine($"Текст: {text2}");
+// Console.WriteLine($"Количество символов: {text2.Length}");
+// Console.WriteLine($"Байты:{BitConverter.ToString(textByte2)}");
+
+// using System.Text;
+
+// string english = "A";
+// string russian = "А";
+
+// byte[] englishBytes = Encoding.UTF8.GetBytes(english);
+// byte[] russianBytes = Encoding.UTF8.GetBytes(russian);
+// Console.WriteLine($"A: {BitConverter.ToString(englishBytes)}");
+// Console.WriteLine($"А: {BitConverter.ToString(russianBytes)}");
+
+
+// string text3 = "Привет";
+// byte[] bytes = Encoding.UTF8.GetBytes(text3);
+// string restored = Encoding.UTF8.GetString(bytes);
+// Console.WriteLine($"Исходная строка:{text3}");
+// Console.WriteLine($"Восстановление: {restored}");
+
+// int numbers2 = 123456789;
+// byte[] bytes2 = BitConverter.GetBytes(numbers2);
+// int restored2 = BitConverter.ToInt32(bytes2, 0);
+// Console.WriteLine($"Исходное число:{numbers2}");
+// Console.WriteLine($"Восстановление:{restored2}");
+// Console.WriteLine($"Байты:{BitConverter.ToString(bytes2)}");
+
